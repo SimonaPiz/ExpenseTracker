@@ -22,5 +22,5 @@ const transactionsSlice = createSlice({
 export const selectTransactions = (state) => state.transactions;
 export const selectFlattenedTransactions = (state) => Object.values(state.transactions).reduce((a,b) => [...a, ...b], []);
 
-export const { addTransaction, deleteTrasaction } = transactionsSlice.actions;
+export const { addTransaction, deleteTransaction } = transactionsSlice.actions;
 export default transactionsSlice.reducer;
