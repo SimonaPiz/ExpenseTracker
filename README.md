@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Expense Tracker
+> A budgeting and expense tracking app. Using Redux Toolkit.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live demo [expansetracker_simonapiz](https://expansetracker_simonapiz.surge.sh/). <!-- If you have the project hosted somewhere, include the link here. -->
 
-## Available Scripts
+<img src="https://github.com/SimonaPiz/ExpenseTracker/assets/91121660/696fccaa-cec2-4ae1-8bdc-d34d34a0fc5a" alt="preview" title="preview app" width="700px"/>
 
-In the project directory, you can run:
+## Table of Contents
+* [General Info](#general-information)
+* [Technologies Used](#technologies-used)
+* [Features](#features)
+* [Setup](#setup)
+* [Author](#author)
+* [Acknowledgements](#acknowledgements)
 
-### `npm start`
+## General Information
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The app allows users to set budgets for various categories, such as food and transportation, and track transactions in those categories. It then sums their spending in each category to calculate the amount of money that remains to be spent.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Refactoring with Redux Toolkit, using a slice-based approach to produce the app’s actions and reducers.
 
-### `npm test`
+## Features
+### The application :
+- should display budgets for various categories
+- allow the user to update/set budjets
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src="https://github.com/SimonaPiz/ExpenseTracker/assets/91121660/9469577b-c821-487d-bb56-da93eaae7198" alt="Tracker preview" title="Tracker preview" width="500"/>
 
-### `npm run build`
+- should display track transactions
+- allow the user to delete each transaction
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="https://github.com/SimonaPiz/ExpenseTracker/assets/91121660/0cc508fa-347e-4b2b-960d-529f5f782a49" alt="transactions preview" title="transactions preview" width="500"/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### In "new Transaction" component:
+- the user can add many transaction for each categories
+  - he can choose the categorie
+  - add a description
+  - add the amount
+ 
+<img src="https://github.com/SimonaPiz/ExpenseTracker/assets/91121660/18d89426-5965-42b5-a866-aa69343401ea" alt="Add transaction preview" title="Add transaction preview" width="500"/>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used
+- Node - version 18
+- React - version 18
+- Redux - version 4
+- reduxjs/toolkit - version 1.8
 
-### `npm run eject`
+## Setup
+To run this project, install it locally using npm:
+```
+$ cd ../[directory]
+$ npm install
+$ npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Author
+[Simona Pizio](https://github.com/SimonaPiz)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgements
+This project comes from the [Codecademy's Front-End Engineer](https://join.codecademy.com/learn/paths/front-end-engineer-career-path-b/) course.
